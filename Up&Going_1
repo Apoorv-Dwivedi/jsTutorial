@@ -1,2 +1,28 @@
 It’s typically asserted that JavaScript is interpreted, because your Java‐Script source code is processed each time it’s run. But that’s notentirely accurate. The JavaScript engine actually compiles the pro‐gram on the fly and then
 immediately runs the compiled code.
+
+
+Using Number(..) (a built-in function) as shown is an explicit coer‐cion from any other type to the number type
+Static Typing :- Where we pre define the data type of variable.
+Dynamic Typing :- Where datatype is not defined, it changes based upon variable value. Js is dynamically typed language.
+
+amount.toFixed(2)
+lets us specify how many decimal places we’d like the number rounded to, and it produces the string as necessary.
+
+in code we often need to group a series of statements together, which we often call a block. In JavaScript, a block is defined by wrapping one or more statements inside a curly-brace pair
+{ .. }
+
+
+
+Default Function declaration in JS.
+
+function printAmount(amt) {
+ console.log( amt.toFixed( 2 ) );
+}
+function formatAmount() {
+ return "$" + amount.toFixed( 2 );
+}
+var amount = 99.99;
+printAmount( amount * 2 ); // "199.98"
+amount = formatAmount();
+console.log( amount );
