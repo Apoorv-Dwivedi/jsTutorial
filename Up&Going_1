@@ -77,3 +77,19 @@ arr[1]; // 42
 arr[2]; // true
 arr.length; // 3
 typeof arr; // "object"
+
+
+Coercion comes in two forms in JavaScript: explicit and implicit. Explicit coercion is simply that you can see from the code that a conversion from one type to another will occur, whereas implicit
+coercion is when the type conversion can happen as more of a nonobvious side effect of some other operation
+
+
+The specific list of “falsy” values in JavaScript is as follows:
+• "" (empty string)
+• 0, -0, NaN (invalid number)
+• null, undefined
+• false
+Any value that’s not on this “falsy” list is “truthy.”
+
+
+The difference between == and === is usually characterized that == checks for value equality and === checks for both value and type equality. However, this is inaccurate. The proper way to characterize
+them is that == checks for value equality with coercion allowed, and === checks for value equality without allowing coercion; === is often called “strict equality” for this reason.v
