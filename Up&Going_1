@@ -26,3 +26,54 @@ var amount = 99.99;
 printAmount( amount * 2 ); // "199.98"
 amount = formatAmount();
 console.log( amount );
+
+
+The following built-in types are available:
+• string
+• number
+• boolean
+• null and undefined
+• object
+• symbol (new to ES6)
+
+
+The object type refers to a compound value where you can set properties (named locations) that each hold their own values of any type. This is perhaps one of the most useful value types in all of Java‐
+Script:
+
+var obj = {
+ a: "hello world",
+ b: 42,
+ c: true
+};
+
+
+obj.a; // "hello world"
+obj.b; // 42
+obj.c;
+
+
+Properties can either be accessed with dot notation (i.e., obj.a) or bracket notation (i.e., obj["a"]). Dot notation is shorter and gener‐ally easier to read, and is thus preferred when possible.
+Bracket notation is useful if you have a property name that has spe‐cial characters in it, like obj["hello world!"]—such properties are often referred to as keys when accessed via bracket notation. The [ ]
+notation requires either a variable (explained next) or a string lit‐eral (which needs to be wrapped in " .. " or ' .. ').
+
+var obj = {
+ a: "hello world",
+ b: 42
+};
+
+var b = "a";
+obj[b]; // "hello world"
+obj["b"];
+
+
+An array is an object that holds values (of any type) not particularly in named properties/keys, but rather in numerically indexed positions. For example:
+var arr = [
+ "hello world",
+ 42,
+ true
+];
+arr[0]; // "hello world"
+arr[1]; // 42
+arr[2]; // true
+arr.length; // 3
+typeof arr; // "object"
